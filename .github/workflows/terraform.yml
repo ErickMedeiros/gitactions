@@ -5,14 +5,14 @@ on:
     branches: [ "master" ]
   pull_request:
 
-permissions:
-  contents: read
+#permissions:
+#  contents: read
 
 jobs:
   terraform:
-    name: 'Terraform'
+    name: 'Terraform plan'
     runs-on: ubuntu-latest
-    environment: production
+    environment: stage
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:

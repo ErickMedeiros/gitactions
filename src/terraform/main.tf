@@ -1,6 +1,6 @@
 #Arquivo de provisionamento de recursos no azure ---
 #Estudo de Terraform - Erick Medeiros ---
-#Projeto Stage 
+#Projeto Stage - Novo
 
 # Configure the Azure provider
 terraform {
@@ -16,13 +16,10 @@ terraform {
 
 provider "azurerm" {
   features {}
-
-  #subscription_id  = var.subscription_id 
-  #client_id        = var.client_id
-  #client_secret    = var.client_secret
-  #tenant_id        = var.tenant_id
-
-
+  # subscription_id  = var.subscription_id 
+  # client_id        = var.client_id
+  # client_secret    = var.client_secret
+  # tenant_id        = var.tenant_id
 }
 
 #backup do estado 
