@@ -17,6 +17,12 @@ terraform {
 provider "azurerm" {
   features {}
 
+  #subscription_id  = var.subscription_id 
+  #client_id        = var.client_id
+  #client_secret    = var.client_secret
+  #tenant_id        = var.tenant_id
+
+
 }
 
 #backup do estado 
@@ -26,7 +32,7 @@ terraform {
     resource_group_name  = "RG-STO-BK"
     storage_account_name = "stobackupterraform"
     container_name       = "tfstate"
-    key                  = "staging.terraform.tfstate"
+    key                  = "stage.terraform.tfstate"
   }
 }
 
